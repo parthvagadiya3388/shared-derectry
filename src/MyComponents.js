@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 export default function MyComponents() {
   return (
-    <div>
-        <div className='container bg-danger'>
-            <h1>shared-components........</h1>
-        </div>
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <div style={{ backgroundColor: 'red', padding: '20px', borderRadius: '5px' }}>
+        <h1 style={{ color: 'white' }}>shared-components........</h1>
+      </div>
     </div>
-  )
+  );
 }
