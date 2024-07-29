@@ -4,7 +4,7 @@ export default function MyComponents() {
   return (
     <div>
         <div className=''>
-            <h1>shared components........</h1>
+            <h1>shared-components........</h1>
         </div>
     </div>
   )
