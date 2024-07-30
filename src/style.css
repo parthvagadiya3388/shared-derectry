@@ -1,9 +1,59 @@
-.main_div{
+/* General styles for the card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card header */
+  .card-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Form group styles */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  /* Label styles */
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Input styles */
+  .form-group input {
     padding: 10px;
-    background-color: rgb(1, 1, 1);
-}
-.input-div{
-    padding: 10px;
-    color: white;
-    text-transform: capitalize;
-}
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive adjustments for larger screens */
+  @media (min-width: 768px) {
+    .form-group {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .form-group label {
+      width: 150px;
+      margin-bottom: 0;
+      text-align: right;
+      margin-right: 20px;
+    }
+  
+    .form-group input {
+      flex: 1;
+    }
+  }
+  

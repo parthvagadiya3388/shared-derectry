@@ -1,16 +1,28 @@
 import './style.css';
 
-export default function MyComponents({ first_label , second_label }) {
+export default function MyComponents() {
   return (
-    <div class="main_div" style={{ padding:'10px', textAlign: 'center', marginTop: '50px' }}>
-      <div style={{ backgroundColor: 'rgb(46, 46, 160)', padding: '20px', borderRadius: '5px' }}>
-        <h1 style={{ color: 'white' }}>shared-components........</h1>
+    <div className="card">
+      <div className="card-header">User Information</div>
+      <div className="form-group">
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" />
       </div>
-      <div class="input-div">
-        <label>{first_label}</label>
-        <input type="text" />
-        <label>{second_label}</label>
-        <input type="text" />
+      <div className="form-group">
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div className="form-group">
+        <label htmlFor="position">Position:</label>
+        <input type="text" id="position" name="position" />
+      </div>
+      <div className="form-group">
+        <label htmlFor="address">Address:</label>
+        <input type="text" id="address" name="address" />
+      </div>
+      <div className="form-group">
+        <label htmlFor="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" />
       </div>
     </div>
   );
